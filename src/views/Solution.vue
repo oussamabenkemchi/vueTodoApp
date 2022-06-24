@@ -26,14 +26,14 @@
        <template v-if="showForm" v-slot:form>
            <div>
              <form @submit.prevent="addTaskRequest" >
-               <div class="flex flex-row mb-5"> 
+               <div class="flex flex-col md:flex-row mb-5"> 
                  <div  class="flex flex-col w-full mr-5 ">
                    <label class="mb-2" >Item</label>
                     <input v-model="item" required class="p-2 rounded-md border-none ring-1 ring-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-200 " type="text" placeholder="Type a task to do" />
                   
                   </div>
                   <div class="flex flex-col w-full ">
-                       <label class="mb-2" >Deadline</label>
+                       <label class="mb-2 mt-3 md:mt-0 " >Deadline</label>
                         <input v-model="deadline" required type="datetime-local" class="p-2 rounded-md border-none ring-1 ring-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-200 "  />
                   
                   </div> 
@@ -95,8 +95,8 @@
     </Card>
 
 
- <div v-else class="w-3xl  m-auto mt-5 ">
-      <div v-if="tasksList.length" class="grid grid-cols-4" >
+ <div v-else class="w-3xl  m-auto mt-5  ">
+      <div v-if="tasksList.length" class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" >
         <div v-for="task in tasksList" :key="task._id" >
           <TaskItemGrid :task="task" :updateTaskHandler="updateTaskRequest" :deleteTaskHandler="deleteTaskRequest" />
         </div>

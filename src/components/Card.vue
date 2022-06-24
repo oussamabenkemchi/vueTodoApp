@@ -1,5 +1,5 @@
 <template>
-            <div class="w-3xl  m-auto border border-blue-200 overflow-hidden rounded-md mb-5"> 
+            <div class="w-3xl  m-auto border border-blue-200 overflow-hidden md:rounded-md mb-5"> 
                 <div class="p-4 text-gray-700 font-bold bg-gray-200  ">
                             <slot name="header"></slot>
                 </div>
