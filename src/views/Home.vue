@@ -47,12 +47,12 @@
             </a>
           </div>
 
-           <div class="rounded-md shadow ml-4">
+           <div class="rounded-md shadow mt-3 sm:mt-0 sm:ml-3 ">
             <router-link to="/solution"
             
           >
           <div
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none focus:ring transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
             >
               See Solution
             </div>
