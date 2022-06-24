@@ -49,15 +49,13 @@
 
            <div class="rounded-md shadow ml-4">
             <router-link to="/solution"
-            custom
-            v-slot="{href }"
+            
           >
-          <a
-              :href="href"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-indigo-500 focus:outline-none focus:ring transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+          <div
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
             >
               See Solution
-            </a>
+            </div>
           </router-link>
 
              
